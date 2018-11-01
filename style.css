@@ -1,0 +1,74 @@
+body {
+	overflow: hidden;
+}
+
+.loading {
+	display : block;
+    position : fixed;
+    z-index: 100;
+    background-image : url(./images/center-loading.gif);
+    background-repeat : no-repeat;
+    background-position : center;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;
+}
+
+.main-container {
+	display: none;
+}
+
+.box-area {
+	height: calc(100vh - 0px);
+}
+
+.desc-top-section {
+	padding-left: 10px;
+	height: 250px;
+	position: relative;
+    margin-right:5px;
+}
+
+.show-diff {
+	position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.text-wrap {
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/********** desc-section css ********/
+
+.desc-section {
+	padding: 3px;
+} 
+
+.desc-title  {
+	background-color: turquoise;
+	padding: 4px;
+}
+
+
+/********** product item css ********/
+
+.product-item {
+	padding-left: 10px;
+	height: 273px;
+}
+
+.product-image {
+	height: 19rem;
+}
+
+.hide-label {
+	visibility: hidden;
+}
+
+.close {
+	float: right;
+}
