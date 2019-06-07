@@ -2,52 +2,24 @@
 <html>
 <head>
 	<title>JS Learning</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 	<link rel="stylesheet" type="text/css" href="style.css">
-	
 </head>
 <body>
 	<div class="loading">
+		<h1>Loading...</h1>
 	</div>
-	<div class="row main-container">
-		<div class="col-xs-3">
-			<div class="box-area">
-
-				<div class="desc-top-section">
-					<h1>Compare</h1>
-					<p> <span id="item-selected"> 2 </span> items selected</p>
-					<div>
-						<button id="compare2Product">
-							Compare 2 Products
-						</button>
-					</div>
-					<div>
-						<button id="compare3Product">
-							Compare 3 Products
-						</button>
-					</div>
-					<div>
-						<button id="compare4Product">
-							Compare 4 Products
-						</button>
-					</div>
-					<div class="show-diff">
-						<input id="show-differences" type="checkbox" name="show-differences">
-						<label for="show-differences">
-							Show only differences
-						</label>
-					</div>
-				</div>
-
-				<div class="desc-section">
-					
-				</div>
-
-			</div>
+	<div class="display-none">
+		<div class="header">
+			<span>
+				<label>Compare Products</label>
+				<select class="compare-product" value="2">
+					<option value="2">Compare 2 products</option>
+					<option value="3">Compare 3 products</option>
+					<option value="4">Compare 4 products</option>
+				</select>
+			</span>
 		</div>
-		<div id="product-list">
+		<div class="container">
 		</div>
 	</div>
 	<script type="module" src="main.js">
